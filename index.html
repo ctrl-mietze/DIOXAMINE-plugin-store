@@ -14,31 +14,23 @@
 <body data-page="home">
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
   <header class="topbar">
-    <a class="brand" href="./" aria-label="DIOXAMINE Plugin Store home">
-      <img src="assets/mark.svg" width="32" height="32" alt="">
-      <span>DIOXAMINE <b>Plugin Store</b><small data-i18n="community">COMMUNITY CATALOGUE</small></span>
-    </a>
+    <a class="brand" href="./" aria-label="DIOXAMINE Plugin Store home"><img src="assets/mark.svg" width="32" height="32" alt=""><span>DIOXAMINE <b>Plugin Store</b><small data-i18n="community">COMMUNITY CATALOGUE</small></span></a>
     <nav class="nav" aria-label="Main navigation">
       <a href="plugins/" data-i18n="browse">Browse plugins</a>
       <a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/blob/main/docs/plugin-submission.md" data-i18n="submit">Submit a plugin</a>
       <a class="nav-repo" href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store" target="_blank" rel="noreferrer"><span data-i18n="repository">Repository</span><span aria-hidden="true">↗</span></a>
-      <div class="nav-tools">
-        <div class="language" role="group" aria-label="Language">
-          <button type="button" data-lang="de" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-lang="en" aria-pressed="true">EN</button>
-        </div>
-        <button class="theme-toggle" type="button" aria-label="Change color theme" title="Change color theme"><span aria-hidden="true">◐</span></button>
-      </div>
     </nav>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria="menuLabel">Menu</button>
+    <div class="header-tools">
+      <div class="language" role="group" aria-label="Select language" data-i18n-aria="languageLabel"><button type="button" data-lang="de" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-lang="en" aria-pressed="true">EN</button></div>
+      <button class="theme-toggle header-theme" type="button" aria-label="Change color theme" title="Change color theme"><span aria-hidden="true">◐</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria="menuLabel">Menu</button>
+    </div>
   </header>
   <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="plugins/" data-i18n="browse">Browse plugins</a>
-    <a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/blob/main/docs/plugin-submission.md" data-i18n="submit">Submit a plugin</a>
-    <a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store" target="_blank" rel="noreferrer" data-i18n="repository">Repository</a>
-    <div class="mobile-tools"><div class="language" role="group" aria-label="Language"><button type="button" data-lang="de" aria-pressed="false">DE</button><span aria-hidden="true">/</span><button type="button" data-lang="en" aria-pressed="true">EN</button></div><button class="theme-toggle" type="button" aria-label="Change color theme" title="Change color theme"><span aria-hidden="true">◐</span><span data-i18n="theme">Theme</span></button></div>
+    <a href="plugins/" data-i18n="browse">Browse plugins</a> <a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/blob/main/docs/plugin-submission.md" data-i18n="submit">Submit a plugin</a> <a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store" target="_blank" rel="noreferrer" data-i18n="repository">Repository</a>
+    <div class="mobile-tools"><span data-i18n="theme">Theme</span><button class="theme-toggle" type="button" aria-label="Change color theme" title="Change color theme"><span aria-hidden="true">◐</span></button></div>
   </div>
-
-  <main id="main">
+<main id="main">
     <section class="hero wrap">
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">AN OPEN COMMUNITY PROJECT</span></div>

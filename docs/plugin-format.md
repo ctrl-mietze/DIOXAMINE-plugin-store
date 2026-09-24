@@ -1,6 +1,6 @@
 # Plugin package format
 
-The Store targets DIOXAMINE's current plugin installer format. The archive is a ZIP with the current `plugin.json` manifest at the archive root; the installer validates and extracts it. The Store does not install packages itself and does not introduce a parallel plugin manager.
+Build Store packages from DIOXAMINE's current plugin base and quickstart. The archive is a ZIP with the current `plugin.json` manifest at the archive root; DIOXAMINE's installer validates and extracts it. The Store does not install packages itself and does not introduce a parallel plugin manager.
 
 ## Package layout
 

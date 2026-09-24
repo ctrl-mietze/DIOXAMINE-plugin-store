@@ -1,6 +1,6 @@
 # DIOXAMINE Plugin Store plugin
 
-This is a purpose-built plugin for DIOXAMINE's current ZIP plugin system. It is not copied from a legacy plugin base. The plugin uses the current manifest shape and network permission, and relies on DIOXAMINE's existing installer to import its ZIP package.
+This plugin is built on DIOXAMINE's current plugin base and ZIP manifest contract. Its `plugin.json`, entry point, icon, and permission declaration follow the current DIOXAMINE plugin structure and [plugin quickstart](https://github.com/ctrl-mietze/Dioxamine/blob/main/docs/src/plugins/quickstart.md). It uses the current network bridge and relies on DIOXAMINE's existing installer to validate and import its ZIP package; it does not add a second plugin manager.
 
 ## Build
 

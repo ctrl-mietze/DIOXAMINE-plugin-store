@@ -4,7 +4,7 @@ This is a community project for discovering plugins that use DIOXAMINE's current
 
 ## Submit a plugin
 
-1. Build and test the plugin with DIOXAMINE's current ZIP installer. The archive must contain `plugin.json` at its root.
+1. Start from DIOXAMINE's [current plugin base and quickstart](https://github.com/ctrl-mietze/Dioxamine/blob/main/docs/src/plugins/quickstart.md), then build and test with its current ZIP installer. The archive must contain `plugin.json` at its root.
 2. Read [`docs/plugin-format.md`](docs/plugin-format.md) and [`docs/plugin-submission.md`](docs/plugin-submission.md).
 3. Fork this repository and add the package directory under `plugins/<plugin-id>/`.
 4. Add its metadata to `catalogue/plugins.json`, including the archive SHA-256.
