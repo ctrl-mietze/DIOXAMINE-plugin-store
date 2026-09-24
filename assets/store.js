@@ -86,7 +86,7 @@
   }
 
   function pluginUrl(plugin) { return `${RAW}${plugin.package.split('/').map(encodeURIComponent).join('/')}`; }
-  function detailHref(plugin) { return `detail.html?id=${encodeURIComponent(plugin.id)}`; }
+  function detailHref(plugin) { return `detail.html?id=${encodeURIComponent(plugin.id)}&v=20260924-3`; }
 
   function drawCards() {
     const grid=$('#plugin-grid');
