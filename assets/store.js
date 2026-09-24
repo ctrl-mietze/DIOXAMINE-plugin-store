@@ -86,7 +86,7 @@
   }
 
   function pluginUrl(plugin) { return `${RAW}${plugin.package.split('/').map(encodeURIComponent).join('/')}`; }
-  function detailHref(plugin) { return `detail.html?id=${encodeURIComponent(plugin.id)}&v=20260924-3`; }
+  function detailHref(plugin) { return `detail.html?id=${encodeURIComponent(plugin.id)}&v=20260924-4`; }
 
   function drawCards() {
     const grid=$('#plugin-grid');
@@ -167,7 +167,7 @@
     getCatalogue().then(result=>{
       fillCategories();
       if(document.body.dataset.page==='catalogue') drawCards(); else drawDetail();
-      if(result.stale) setStatus(tr('stale'));
+      if(result.stale) setStatus(tr('stale')); else setStatus('',false);
     }).catch(()=>{setStatus(tr('failed'));if(document.body.dataset.page==='catalogue')drawCards();else drawDetail();});
   } else {
     getCatalogue().then(()=>{const count=$('#plugin-count');if(count)count.textContent=String(catalogue.length);}).catch(()=>{const count=$('#plugin-count');if(count)count.textContent='0';});
