@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="color-scheme" content="light dark"><title>DIOXAMINE Plugin Store</title><link rel="stylesheet" href="store.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand"><img src="icon.svg" alt="" width="33" height="33"><div><b>DIOXAMINE Plugin Store</b><small data-t="community">COMMUNITY PLUGINS</small></div></div>
+    <div class="tools"><div class="language" role="group" aria-label="Language"><button type="button" data-lang="de" aria-pressed="false">DE</button><span>/</span><button type="button" data-lang="en" aria-pressed="true">EN</button></div><button id="refresh" class="icon-button" type="button" aria-label="Refresh catalogue">↻</button></div>
+  </header>
+  <main>
+    <section class="intro"><span class="eyebrow"><i></i><span data-t="communityStore">COMMUNITY PLUGIN STORE</span></span><h1 data-t="title">Discover plugins.</h1><p data-t="intro">Community-built plugins for DIOXAMINE. Browse the public catalogue and inspect each project before installing.</p>
+      <div class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Search plugins…" aria-label="Search plugins"></div>
+      <label class="category"><span data-t="category">Category</span><select id="category"><option value="all" data-t="all">All categories</option></select></label>
+      <div class="status-line"><span id="state" role="status" aria-live="polite" data-t="loading">Loading catalogue…</span><span><b id="count">0</b> <span data-t="available">available</span></span></div>
+    </section>
+    <section id="cards" class="cards" aria-live="polite"></section>
+    <section id="empty" class="empty" hidden><div class="empty-mark">D</div><span class="eyebrow" data-t="early">EARLY STAGE</span><h2 data-t="emptyTitle">The catalogue is taking shape.</h2><p data-t="emptyBody">There are no community plugins listed yet. New submissions will appear here after review.</p><a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/blob/main/docs/plugin-submission.md" target="_blank" rel="noreferrer" data-t="submit">How to submit a plugin →</a></section>
+    <section class="trust"><span aria-hidden="true">ⓘ</span><p data-t="trust">Plugins are community projects. A listing is not a security audit or endorsement. Check the source and requested permissions before installation.</p></section>
+  </main>
+  <footer><span data-t="footer">Independent community project · Catalogue hosted on GitHub</span><a href="https://github.com/ctrl-mietze/DIOXAMINE-plugin-store" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  <dialog id="details"><form method="dialog"><button class="close" aria-label="Close">×</button></form><div id="detail-content"></div></dialog>
+  <script src="store.js"></script>
+</body>
+</html>

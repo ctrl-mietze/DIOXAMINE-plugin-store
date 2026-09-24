@@ -1,0 +1,43 @@
+name: Submit a plugin
+description: Propose a compatible community plugin for review
+title: "Plugin submission: "
+labels: [plugin-submission]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a plugin for the Community Plugin Store. Do not attach secret keys or private data.
+  - type: input
+    id: plugin-id
+    attributes:
+      label: Plugin ID
+      description: Stable reverse-DNS ID from the current plugin.json manifest.
+      placeholder: dev.example.plugin
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source repository
+      placeholder: https://github.com/author/plugin
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Plugin license
+      placeholder: MIT
+    validations:
+      required: true
+  - type: textarea
+    id: permissions
+    attributes:
+      label: DIOXAMINE permissions and why they are needed
+    validations:
+      required: true
+  - type: textarea
+    id: tested
+    attributes:
+      label: Compatibility tested and known limitations
+    validations:
+      required: true

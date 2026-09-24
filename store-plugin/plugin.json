@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.pluginstore",
+  "name": "DIOXAMINE Plugin Store",
+  "description": "Browse community-built DIOXAMINE plugins from the public GitHub catalogue",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "common": ["network"]
+  },
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

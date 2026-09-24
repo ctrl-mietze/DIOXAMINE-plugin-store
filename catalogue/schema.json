@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/catalogue/schema.json",
+  "title": "DIOXAMINE Community Plugin Store catalogue",
+  "type": "object",
+  "required": ["schemaVersion", "catalogueVersion", "plugins"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "catalogueVersion": { "type": "integer", "minimum": 1 },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "repository": { "type": "string", "format": "uri" },
+    "plugins": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/plugin" }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "plugin": {
+      "type": "object",
+      "required": ["id", "name", "description", "author", "version", "versionCode", "category", "package", "sha256", "source", "license", "compatibility", "permissions", "updatedAt"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$" },
+        "name": { "$ref": "#/$defs/localizedText" },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "author": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$" },
+        "versionCode": { "type": "integer", "minimum": 1 },
+        "category": { "type": "string", "minLength": 1 },
+        "package": { "type": "string", "pattern": "^plugins/[^/]+/plugin\\.zip$" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "icon": { "type": "string" },
+        "screenshots": { "type": "array", "items": { "type": "string" } },
+        "source": { "type": "string", "format": "uri" },
+        "license": { "type": "string", "minLength": 1 },
+        "minDioxamineVersionCode": { "type": "integer", "minimum": 1 },
+        "permissions": { "type": "object" },
+        "compatibility": {
+          "type": "object",
+          "properties": {
+            "minVersion": { "type": "string" },
+            "minVersionCode": { "type": "integer", "minimum": 1 },
+            "testedVersions": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": true
+        },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "changelog": { "$ref": "#/$defs/localizedText" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,29 @@
+name: Validate catalogue
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+      - name: Test catalogue validation rules
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate catalogue and plugin archives
+        run: python3 scripts/validate_catalogue.py
+      - name: Verify Store plugin package builds
+        run: python3 store-plugin/package.py
+      - name: Ensure committed package matches source
+        run: git diff --exit-code -- store-plugin/plugin.zip
