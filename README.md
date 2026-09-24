@@ -1,63 +1,52 @@
 # DIOXAMINE Plugin Store
 
-**Community-built plugins for DIOXAMINE.**
+**A community-built plugin catalogue for DIOXAMINE.**
 
-| [Get Plugins](https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/plugins/) | [Submit a plugin](CONTRIBUTING.md) | [Deutsch](README.de.md) |
-| --- | --- | --- |
+[Deutsch](README.de.md) · [Submit a plugin](docs/plugin-submission.md) · [Plugin format](docs/plugin-format.md)
 
-[![Catalogue validation](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml/badge.svg)](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml) [![GitHub Pages](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/pages.yml/badge.svg)](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/pages.yml) ![MIT License](https://img.shields.io/badge/license-MIT-527db7) ![Community project](https://img.shields.io/badge/community-built-74a891)
+[![Catalogue validation](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml/badge.svg)](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-The DIOXAMINE Plugin Store is a community-built catalogue and discovery site. Plugin packages live in this repository and are served directly from GitHub. It is an independent project maintained by the DIOXAMINE community.
+This repository is the public catalogue and package source for the DIOXAMINE community. Plugins live here, alongside their metadata and documentation. The in-app **DIOXAMINE Plugin Store** plugin reads the catalogue directly from GitHub. There is no separate hosted website or backend.
 
-## Project status
+## Browse plugins
 
-The catalogue and website are being established. **There are currently no community plugins listed.** The repository includes the catalogue format, automated checks, a bilingual discovery site, and the source for an in-app Store plugin.
+Open [`catalogue/plugins.json`](catalogue/plugins.json) to see the machine-readable catalogue, or browse the [`plugins/`](plugins/) directory for package contents. **There are currently no community plugins listed.** The catalogue is intentionally empty until a real plugin has been reviewed and accepted.
 
-## For users
+Plugin packages are stored in this repository and downloaded directly from GitHub. They are not distributed through GitHub Releases.
 
-Browse the [Get Plugins catalogue](https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/plugins/). The site and the in-app Store read `catalogue/plugins.json` from this public repository. Plugin archives are stored under `plugins/<plugin-id>/` and downloaded directly from GitHub; distribution does not use GitHub Releases.
+## Use the in-app Store
 
-The Store plugin is built for DIOXAMINE's current ZIP plugin format (`plugin.json` at the archive root). DIOXAMINE remains responsible for validating and installing a package through its existing plugin installer. The supplied app-side **Open with DIOXAMINE** integration routes ZIP imports to `pluginRepo.install(uri)`; if it is not present in your app build, use **Plugins → Install Plugin** and select the downloaded ZIP.
+The Store plugin source and current package are in [`store-plugin/`](store-plugin/). On Android, download [`store-plugin/plugin.zip`](store-plugin/plugin.zip) and open it with a compatible DIOXAMINE build. The Store plugin fetches catalogue metadata from this repository.
 
-Install the in-app catalogue from [the Store plugin ZIP](store-plugin/plugin.zip): download it on Android and open the ZIP with DIOXAMINE.
+DIOXAMINE's existing plugin repository and ZIP installer remain responsible for validating and installing plugin archives. The Store plugin does not create a parallel installer.
 
-## Publish the website
+## Submit a plugin
 
-The Pages workflow builds and deploys the site on pushes to `main`. If Pages has not been enabled for this repository yet, set **Settings → Pages → Build and deployment → Source → GitHub Actions** once; subsequent deployments run automatically.
+Anyone may develop a compatible DIOXAMINE plugin and submit it for inclusion in this Community Plugin Store. Fork this repository, follow the [submission guide](docs/plugin-submission.md) and [plugin format](docs/plugin-format.md), then open a pull request. Automated checks validate the catalogue and package; maintainers review submissions before merging.
 
-## For developers
+Community review is not a security audit or a safety guarantee. Check each plugin's source, license, compatibility, and requested permissions before installing it.
 
-Anyone may develop a compatible DIOXAMINE plugin and submit it for inclusion in this Community Plugin Store. Start with [plugin submission](docs/plugin-submission.md), then review the [package format](docs/plugin-format.md). Submissions are reviewed; inclusion does not guarantee that a plugin is safe or endorsed. Review source code and requested permissions before installing.
-
-## Repository map
+## Repository layout
 
 ```text
-catalogue/                 Public, versioned machine-readable index
-plugins/<plugin-id>/       Plugin metadata, ZIP package, source notes, assets
-store-plugin/              DIOXAMINE Store plugin source and packager
-site/                      GitHub Pages discovery website (English + German)
-docs/                      Contributor and format documentation
-scripts/                   Local validation and package tooling
-.github/workflows/         Catalogue validation and Pages deployment
+catalogue/                 Public machine-readable catalogue and schema
+plugins/<plugin-id>/       Reviewed plugin metadata, ZIP packages, and assets
+store-plugin/              In-app Store plugin source and ZIP packager
+docs/                      Plugin format and submission guides
+scripts/                   Catalogue validation and package tooling
+.github/workflows/         Automated catalogue and package checks
 ```
 
-## Work locally
+## Validate locally
 
 ```bash
+python3 -m unittest discover -s tests -v
 python3 scripts/validate_catalogue.py
 python3 store-plugin/package.py
 ```
 
-The validator checks metadata, package paths, manifest agreement, ZIP safety, archive hashes, and duplicate identifiers. GitHub Actions runs it for pull requests and pushes.
-
-## Links
-
-- [Get Plugins](https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/plugins/)
-- [Plugin submission guide](docs/plugin-submission.md)
-- [Plugin package format](docs/plugin-format.md)
-- [Contributing](CONTRIBUTING.md)
-- [Repository](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store)
+The validator checks required metadata, unique plugin IDs, package paths, manifest agreement, ZIP safety, and SHA-256 hashes. GitHub Actions runs these checks for pull requests and pushes to `main`.
 
 ## License
 
-Repository tooling and website: [MIT](LICENSE). Plugin packages retain the license declared by each plugin author.
+Repository tooling and Store plugin source: [MIT](LICENSE). Each submitted plugin keeps the license declared by its author.

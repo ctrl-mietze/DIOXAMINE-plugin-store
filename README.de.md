@@ -1,63 +1,52 @@
 # DIOXAMINE Plugin Store
 
-**Community-Plugins für DIOXAMINE.**
+**Ein Community-Katalog für DIOXAMINE-Plugins.**
 
-| [Plugins entdecken](https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/plugins/) | [Plugin einreichen](CONTRIBUTING.md) | [English](README.md) |
-| --- | --- | --- |
+[English](README.md) · [Plugin einreichen](docs/plugin-submission.md) · [Plugin-Format](docs/plugin-format.md)
 
-[![Katalogprüfung](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml/badge.svg)](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml) [![GitHub Pages](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/pages.yml/badge.svg)](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/pages.yml) ![MIT-Lizenz](https://img.shields.io/badge/license-MIT-527db7) ![Community-Projekt](https://img.shields.io/badge/community-built-74a891)
+[![Katalogprüfung](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml/badge.svg)](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/actions/workflows/validate-catalogue.yml) [![MIT-Lizenz](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Beiträge willkommen](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-Der DIOXAMINE Plugin Store ist ein Community-Katalog mit einer öffentlichen Entdeckungsseite. Plugin-Pakete liegen direkt in diesem Repository und werden über GitHub bereitgestellt. Das unabhängige Projekt wird von der DIOXAMINE-Community gepflegt.
+Dieses Repository ist der öffentliche Katalog und Paket-Speicher der DIOXAMINE-Community. Plugins, Metadaten und Dokumentation liegen direkt hier. Das In-App-Plugin **DIOXAMINE Plugin Store** liest den Katalog direkt von GitHub. Es gibt keine separate gehostete Website und kein separates Backend.
 
-## Projektstatus
+## Plugins entdecken
 
-Katalog und Website werden gerade aufgebaut. **Aktuell sind noch keine Community-Plugins gelistet.** Dieses Repository enthält bereits das Katalogformat, automatische Prüfungen, eine zweisprachige Website sowie den Quellcode für ein Store-Plugin in DIOXAMINE.
+Die maschinenlesbare Übersicht steht in [`catalogue/plugins.json`](catalogue/plugins.json). Die [`plugins/`](plugins/) enthält die Paketdateien. **Aktuell sind noch keine Community-Plugins gelistet.** Der Katalog bleibt leer, bis echte Plugins geprüft und aufgenommen wurden.
 
-## Für Nutzer
+Plugin-Pakete liegen in diesem Repository und werden direkt von GitHub geladen. GitHub Releases werden dafür nicht verwendet.
 
-Durchsuche den [Plugin-Katalog](https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/plugins/). Website und Store-Plugin lesen `catalogue/plugins.json` aus diesem öffentlichen Repository. Plugin-Archive liegen unter `plugins/<plugin-id>/` und werden direkt von GitHub geladen; GitHub Releases werden nicht verwendet.
+## Store in DIOXAMINE verwenden
 
-Das Store-Plugin nutzt DIOXAMINEs aktuelles ZIP-Pluginformat (`plugin.json` im Archiv-Stammverzeichnis). DIOXAMINE bleibt für Validierung und Installation über den vorhandenen Plugin-Installer zuständig. Die mitgelieferte Integration **Mit DIOXAMINE öffnen** leitet ZIP-Importe an `pluginRepo.install(uri)` weiter. Falls sie in deiner App-Version noch fehlt, wähle **Plugins → Install Plugin** und dann die heruntergeladene ZIP-Datei.
+Quellcode und aktuelles Paket des Store-Plugins befinden sich in [`store-plugin/`](store-plugin/). Lade auf Android [`store-plugin/plugin.zip`](store-plugin/plugin.zip) herunter und öffne es mit einer kompatiblen DIOXAMINE-Version. Das Store-Plugin liest anschließend die Katalogdaten aus diesem Repository.
 
-Installiere den In-App-Katalog über das [Store-Plugin-ZIP](store-plugin/plugin.zip): Lade es auf Android herunter und öffne die ZIP-Datei mit DIOXAMINE.
+DIOXAMINEs vorhandenes Plugin-Repository und der ZIP-Installer bleiben für Prüfung und Installation zuständig. Das Store-Plugin baut keinen parallelen Installer.
 
-## Website veröffentlichen
+## Plugin einreichen
 
-Der Pages-Workflow baut und veröffentlicht die Website bei Pushes auf `main`. Falls Pages für dieses Repository noch nicht aktiviert ist, stelle einmalig **Settings → Pages → Build and deployment → Source → GitHub Actions** ein. Danach laufen Veröffentlichungen automatisch.
+Jeder darf ein kompatibles DIOXAMINE-Plugin entwickeln und zur Aufnahme in diesen Community Plugin Store einreichen. Forke dieses Repository, folge der [Einreichungsanleitung](docs/plugin-submission.md) und dem [Plugin-Format](docs/plugin-format.md) und erstelle einen Pull Request. Automatische Prüfungen kontrollieren Katalog und Paket; Verantwortliche prüfen Einreichungen vor dem Merge.
 
-## Für Entwickler
-
-Jeder darf ein kompatibles DIOXAMINE-Plugin entwickeln und zur Aufnahme in diesen Community Plugin Store einreichen. Lies zuerst die [Einreichungsanleitung](docs/plugin-submission.md) und danach das [Paketformat](docs/plugin-format.md). Einreichungen werden geprüft. Die Aufnahme garantiert weder Sicherheit noch eine Empfehlung. Prüfe Quellcode und angeforderte Berechtigungen, bevor du ein Plugin installierst.
+Eine Community-Prüfung ist weder ein Sicherheitsaudit noch eine Sicherheitsgarantie. Prüfe Quelle, Lizenz, Kompatibilität und angeforderte Berechtigungen eines Plugins vor der Installation.
 
 ## Repository-Aufbau
 
 ```text
-catalogue/                 Öffentlicher maschinenlesbarer Katalog
-plugins/<plugin-id>/       Metadaten, ZIP-Paket, Hinweise und Assets
-store-plugin/              DIOXAMINE-Store-Plugin und Paketierung
-site/                      GitHub-Pages-Website (Deutsch + Englisch)
-docs/                      Dokumentation für Entwickler und Paketformat
-scripts/                   Lokale Prüf- und Paketierungswerkzeuge
-.github/workflows/         Katalogprüfung und Pages-Veröffentlichung
+catalogue/                 Öffentlicher Katalog und Schema
+plugins/<plugin-id>/       Geprüfte Plugin-Metadaten, ZIP-Pakete und Dateien
+store-plugin/              In-App-Store-Plugin und ZIP-Paketierung
+docs/                      Anleitung zur Einreichung und Plugin-Format
+scripts/                   Katalogprüfung und Paketwerkzeuge
+.github/workflows/         Automatische Katalog- und Paketprüfungen
 ```
 
-## Lokal arbeiten
+## Lokal prüfen
 
 ```bash
+python3 -m unittest discover -s tests -v
 python3 scripts/validate_catalogue.py
 python3 store-plugin/package.py
 ```
 
-Die Prüfung kontrolliert Metadaten, Paketpfade, Manifest-Abgleich, ZIP-Sicherheit, SHA-256-Prüfsummen und doppelte Kennungen. GitHub Actions führt sie für Pull Requests und Pushes aus.
-
-## Links
-
-- [Plugins entdecken](https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/plugins/)
-- [Plugin einreichen](docs/plugin-submission.md)
-- [Paketformat](docs/plugin-format.md)
-- [Mitwirken](CONTRIBUTING.md)
-- [Repository](https://github.com/ctrl-mietze/DIOXAMINE-plugin-store)
+Der Validator prüft Pflichtangaben, eindeutige Plugin-IDs, Paketpfade, Manifest-Abgleich, ZIP-Sicherheit und SHA-256-Prüfsummen. GitHub Actions führt diese Prüfungen bei Pull Requests und Pushes auf `main` aus.
 
 ## Lizenz
 
-Repository-Werkzeuge und Website: [MIT](LICENSE). Für Plugin-Pakete gilt die Lizenz, die der jeweilige Autor angibt.
+Repository-Werkzeuge und Store-Plugin-Quellcode: [MIT](LICENSE). Für eingereichte Plugins gilt die Lizenz, die der jeweilige Autor angibt.

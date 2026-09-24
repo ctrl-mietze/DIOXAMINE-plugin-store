@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ctrl-mietze.github.io/DIOXAMINE-plugin-store/catalogue/schema.json",
+  "$id": "https://raw.githubusercontent.com/ctrl-mietze/DIOXAMINE-plugin-store/main/catalogue/schema.json",
   "title": "DIOXAMINE Community Plugin Store catalogue",
   "type": "object",
   "required": ["schemaVersion", "catalogueVersion", "plugins"],
