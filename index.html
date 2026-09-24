@@ -8,6 +8,7 @@
   <title>DIOXAMINE Plugin Store — Community-built plugins</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/store.css">
+  <link rel="stylesheet" href="assets/brand.css">
   <script src="assets/store.js" defer></script>
 </head>
 <body data-page="home">
@@ -50,14 +51,17 @@
         </div>
         <p class="independent-note" data-i18n="independent">An independent project maintained by the DIOXAMINE community.</p>
       </div>
-      <aside class="catalogue-panel" aria-label="Catalogue status">
-        <div class="panel-top"><span class="panel-label" data-i18n="catalogueStatus">CATALOGUE STATUS</span><span class="live-indicator"><i></i><span data-i18n="live">LIVE</span></span></div>
-        <div class="panel-count"><strong id="plugin-count">—</strong><span data-i18n="availablePlugins">plugins available</span></div>
-        <div class="panel-rule"></div>
-        <div class="panel-row"><span data-i18n="catalogueSource">Catalogue source</span><code>GitHub / main</code></div>
-        <div class="panel-row"><span data-i18n="distribution">Distribution</span><code>Repository files</code></div>
-        <div class="panel-row"><span data-i18n="reviewStatus">Review model</span><code data-i18n="communityReview">Community review</code></div>
-        <div class="panel-foot"><span class="mini-mark">D</span><span data-i18n="panelFoot">Open catalogue · transparent packages · community-led</span></div>
+      <aside class="catalogue-panel" aria-label="Live community catalogue preview">
+        <div class="preview-window">
+          <div class="preview-windowbar"><span class="preview-mark">D</span><code>catalogue / plugins.json</code><span class="preview-live"><i></i> LIVE</span></div>
+          <div class="preview-content">
+            <div class="preview-kicker"><span>PUBLIC INDEX</span><span>MAIN · JSON</span></div>
+            <div class="preview-total"><strong id="plugin-count">—</strong><div><b data-i18n="availablePlugins">plugins available</b><span data-i18n="catalogueSource">Catalogue source</span></div></div>
+            <div class="preview-empty"><span class="preview-plus">＋</span><div><b data-i18n="previewEmptyTitle">A space for community plugins</b><span data-i18n="previewEmptyBody">The first listing starts here.</span></div><span class="preview-arrow" aria-hidden="true">↗</span></div>
+            <div class="preview-data"><span><i></i> SHA-256</span><span>PLUGIN ZIP</span><span>GITHUB</span></div>
+          </div>
+        </div>
+        <div class="preview-caption"><span data-i18n="previewCaption">OPEN · COMMUNITY-MAINTAINED</span><span>01 — 00</span></div>
       </aside>
     </section>
 
