@@ -1,7 +1,1147 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": 1,
-  "updatedAt": "2026-09-24T00:00:00Z",
+  "catalogueVersion": 2,
+  "updatedAt": "2026-09-25T00:00:00Z",
   "repository": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store",
-  "plugins": []
+  "plugins": [
+    {
+      "id": "community.dioxamine.deviceinspector",
+      "name": {
+        "en": "Device Inspector Pro",
+        "de": "Geräte-Inspector Pro"
+      },
+      "description": {
+        "en": "Comprehensive ADB device information dashboard with build, kernel, memory, storage, battery and thermal diagnostics.",
+        "de": "Umfassendes ADB-Geräte-Dashboard für Build, Kernel, Speicher, Akku und Temperaturdiagnose."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Device",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.deviceinspector/plugin.zip",
+      "sha256": "11306a62397cb740f693deea8de735bcd339dfb0e256283f38e86226d8433555",
+      "icon": "plugins/community.dioxamine.deviceinspector/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.deviceinspector",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "device"
+      ]
+    },
+    {
+      "id": "community.dioxamine.logcatpro",
+      "name": {
+        "en": "Logcat Pro",
+        "de": "Logcat Pro"
+      },
+      "description": {
+        "en": "Real-time Logcat viewer with search, pause, filtering and crash-focused views.",
+        "de": "Echtzeit-Logcat mit Suche, Pause, Filtern und Crash-Ansicht."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Developer",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.logcatpro/plugin.zip",
+      "sha256": "872a946150c77e0bea9475702aa8311931194f2c1bc450d9380033be0b0ebb26",
+      "icon": "plugins/community.dioxamine.logcatpro/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.logcatpro",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "developer"
+      ]
+    },
+    {
+      "id": "community.dioxamine.securityaudit",
+      "name": {
+        "en": "Android Security Audit",
+        "de": "Android Sicherheits-Audit"
+      },
+      "description": {
+        "en": "Read-focused Android security diagnostics for patch level, SELinux, verified boot, debugging and security-relevant properties.",
+        "de": "Lesender Android-Sicherheitscheck für Patchlevel, SELinux, Verified Boot, Debugging und relevante Properties."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Security",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.securityaudit/plugin.zip",
+      "sha256": "e7ef6290d9c97764e0f3c8b9bd8d12dd0591d8a211790d8121b94386f5dbf2d9",
+      "icon": "plugins/community.dioxamine.securityaudit/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.securityaudit",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "security"
+      ]
+    },
+    {
+      "id": "community.dioxamine.backuptransfer",
+      "name": {
+        "en": "Backup & Transfer Manager",
+        "de": "Backup- & Transfer-Manager"
+      },
+      "description": {
+        "en": "Transfer individual files between the DIOXAMINE host and the connected target using SAF and ADB push/pull.",
+        "de": "Dateien zwischen DIOXAMINE-Host und Android-Ziel über SAF sowie ADB Push/Pull übertragen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Files",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.backuptransfer/plugin.zip",
+      "sha256": "fa52d6bd2de7aabb426fda11dc08d5c74d40930c2e607a587180d5b9575b99a9",
+      "icon": "plugins/community.dioxamine.backuptransfer/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.backuptransfer",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "push",
+          "pull",
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "files"
+      ]
+    },
+    {
+      "id": "community.dioxamine.plugindevkit",
+      "name": {
+        "en": "DIOXAMINE Plugin Developer Kit",
+        "de": "DIOXAMINE Plugin Developer Kit"
+      },
+      "description": {
+        "en": "Generate valid current plugin.json manifests and a minimal starter plugin structure.",
+        "de": "Erzeugt gültige aktuelle plugin.json-Manifeste und eine minimale Plugin-Starterstruktur."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "DIOXAMINE Tools",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.plugindevkit/plugin.zip",
+      "sha256": "5a9f8b5152e0ce648c6dbd27e37fdc5fff3bb7b7f8627718fb61764ab76d82ee",
+      "icon": "plugins/community.dioxamine.plugindevkit/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.plugindevkit",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {},
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "dioxamine tools"
+      ]
+    },
+    {
+      "id": "community.dioxamine.httpapitester",
+      "name": {
+        "en": "HTTP API Tester",
+        "de": "HTTP API Tester"
+      },
+      "description": {
+        "en": "Postman-style HTTP client powered by the permission-gated dioxamine.http.fetch bridge.",
+        "de": "Postman-artiger HTTP-Client über die berechtigungsgesteuerte dioxamine.http.fetch-Bridge."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Developer",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.httpapitester/plugin.zip",
+      "sha256": "a93f63777fae25f132b98c4d3f905f7f9a505f8e229d9a8e3f9bc1846712003f",
+      "icon": "plugins/community.dioxamine.httpapitester/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.httpapitester",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "common": [
+          "network"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "developer"
+      ]
+    },
+    {
+      "id": "community.dioxamine.appexplorer",
+      "name": {
+        "en": "App Explorer",
+        "de": "App Explorer"
+      },
+      "description": {
+        "en": "Search installed packages and inspect package-manager information through ordinary ADB.",
+        "de": "Installierte Pakete durchsuchen und Package-Manager-Informationen über normales ADB anzeigen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Apps",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.appexplorer/plugin.zip",
+      "sha256": "855b2205a97aff11e4b1694e3df915968adcf2fec95101dfe33b84a06e860855",
+      "icon": "plugins/community.dioxamine.appexplorer/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.appexplorer",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "apps"
+      ]
+    },
+    {
+      "id": "community.dioxamine.workflowbuilder",
+      "name": {
+        "en": "ADB Workflow Builder",
+        "de": "ADB Workflow Builder"
+      },
+      "description": {
+        "en": "Build, save and execute reusable multi-step ADB shell workflows.",
+        "de": "Wiederverwendbare mehrstufige ADB-Workflows erstellen, speichern und ausführen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Automation",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.workflowbuilder/plugin.zip",
+      "sha256": "aaf93c3248a19fb91cdeebdf506c86535aaecea80e3b8d30b2ab77cf24ef46d0",
+      "icon": "plugins/community.dioxamine.workflowbuilder/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.workflowbuilder",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "automation"
+      ]
+    },
+    {
+      "id": "community.dioxamine.processexplorer",
+      "name": {
+        "en": "Process Explorer",
+        "de": "Prozess Explorer"
+      },
+      "description": {
+        "en": "Refreshable process viewer with PID, UID/user, memory and process details exposed by Android.",
+        "de": "Aktualisierbarer Prozess-Viewer mit PID, UID/Benutzer, Speicher und Android-Prozessdetails."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Developer",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.processexplorer/plugin.zip",
+      "sha256": "55dd7c1425b0f079942e54f442cc4e2da0ad1f17810fa05f10af0c974f1b8ab4",
+      "icon": "plugins/community.dioxamine.processexplorer/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.processexplorer",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "developer"
+      ]
+    },
+    {
+      "id": "community.dioxamine.propertyexplorer",
+      "name": {
+        "en": "System Property Explorer",
+        "de": "System Property Explorer"
+      },
+      "description": {
+        "en": "Browse Android getprop output and security, boot, product and runtime properties.",
+        "de": "Android-getprop sowie Security-, Boot-, Produkt- und Runtime-Properties durchsuchen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "System",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.propertyexplorer/plugin.zip",
+      "sha256": "974c8987bc6a84ca13dac7b34993d08be36e0a1235a567645cc1450f3c0e3228",
+      "icon": "plugins/community.dioxamine.propertyexplorer/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.propertyexplorer",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "system"
+      ]
+    },
+    {
+      "id": "community.dioxamine.networkdashboard",
+      "name": {
+        "en": "Network Dashboard",
+        "de": "Netzwerk Dashboard"
+      },
+      "description": {
+        "en": "Inspect interfaces, IPv4/IPv6 addresses, routes, DNS properties and basic connectivity.",
+        "de": "Interfaces, IPv4/IPv6-Adressen, Routen, DNS-Properties und grundlegende Konnektivität anzeigen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Network",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.networkdashboard/plugin.zip",
+      "sha256": "f7c1d29d6418501a72be25a6f3b98c172b65a72840d474b13e74ef040b9986a2",
+      "icon": "plugins/community.dioxamine.networkdashboard/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.networkdashboard",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "network"
+      ]
+    },
+    {
+      "id": "community.dioxamine.dpimanager",
+      "name": {
+        "en": "DPI & Resolution Manager",
+        "de": "DPI- & Auflösungs-Manager"
+      },
+      "description": {
+        "en": "Inspect and change Android display-size and density overrides with reset actions.",
+        "de": "Android-Displaygröße und DPI-Overrides anzeigen, ändern und zurücksetzen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Display",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.dpimanager/plugin.zip",
+      "sha256": "a7acafbf82e1626d1f21497134319d264fe3eea42ec3b1c8c3177f3966ad35b0",
+      "icon": "plugins/community.dioxamine.dpimanager/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.dpimanager",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "display"
+      ]
+    },
+    {
+      "id": "community.dioxamine.animationtweaker",
+      "name": {
+        "en": "Animation Tweaker",
+        "de": "Animations-Tweaker"
+      },
+      "description": {
+        "en": "Inspect and configure Android window, transition and animator duration scales.",
+        "de": "Android Window-, Transition- und Animator-Skalierung anzeigen und konfigurieren."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Display",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.animationtweaker/plugin.zip",
+      "sha256": "c777a2c172fcf417cfe1ce018594174f3c10f01e3d1cadc5b01603801213654d",
+      "icon": "plugins/community.dioxamine.animationtweaker/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.animationtweaker",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "display"
+      ]
+    },
+    {
+      "id": "community.dioxamine.largefilefinder",
+      "name": {
+        "en": "Large File Finder",
+        "de": "Große-Dateien-Finder"
+      },
+      "description": {
+        "en": "Analyze accessible target storage and list the largest files and directories without deleting anything.",
+        "de": "Zugänglichen Zielspeicher analysieren und die größten Dateien und Ordner anzeigen, ohne etwas zu löschen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Files",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.largefilefinder/plugin.zip",
+      "sha256": "179decc829d589d53800bff8058190ae74c3b385b7843f267c8fcd6a97c46110",
+      "icon": "plugins/community.dioxamine.largefilefinder/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.largefilefinder",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "files"
+      ]
+    },
+    {
+      "id": "community.dioxamine.stayawake",
+      "name": {
+        "en": "Stay Awake Manager",
+        "de": "Stay-Awake-Manager"
+      },
+      "description": {
+        "en": "Inspect and configure Android stay-awake-while-plugged-in behavior with presets.",
+        "de": "Android Stay-Awake-bei-Stromversorgung anzeigen und mit Presets konfigurieren."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Display",
+      "accessLevel": "standard",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.stayawake/plugin.zip",
+      "sha256": "ce4c438097253690ede04dc0840523e1de64899b96c0bc1db3bd6e0835f8c243",
+      "icon": "plugins/community.dioxamine.stayawake/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.stayawake",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "standard",
+        "display"
+      ]
+    },
+    {
+      "id": "community.dioxamine.shizu.package",
+      "name": {
+        "en": "ShizuPackage Manager",
+        "de": "ShizuPackage Manager"
+      },
+      "description": {
+        "en": "Shizuku-powered host package management for supported package operations.",
+        "de": "Shizuku-basierte Paketverwaltung auf dem Host für unterstützte Paketaktionen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Apps",
+      "accessLevel": "shizuku",
+      "status": "requires-native-bridge",
+      "installable": false,
+      "package": "plugins/community.dioxamine.shizu.package/plugin.zip",
+      "sha256": "44b2d6933eeb1c2303b4b8f72f60e5a49f921c7ae66ec11704c8df9eed577792",
+      "icon": "plugins/community.dioxamine.shizu.package/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.shizu.package",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {},
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "shizuku",
+        "apps"
+      ]
+    },
+    {
+      "id": "community.dioxamine.shizu.permissions",
+      "name": {
+        "en": "ShizuPermission & AppOps Manager",
+        "de": "ShizuPermission & AppOps Manager"
+      },
+      "description": {
+        "en": "Combined Shizuku runtime-permission and AppOps management interface.",
+        "de": "Kombinierte Shizuku-Verwaltung von Runtime-Permissions und AppOps."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Permissions",
+      "accessLevel": "shizuku",
+      "status": "requires-native-bridge",
+      "installable": false,
+      "package": "plugins/community.dioxamine.shizu.permissions/plugin.zip",
+      "sha256": "18555691db34ad6a9e921c2c6d71cc087fff96903f0b13eef279e738d2aaa6e9",
+      "icon": "plugins/community.dioxamine.shizu.permissions/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.shizu.permissions",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {},
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "shizuku",
+        "permissions"
+      ]
+    },
+    {
+      "id": "community.dioxamine.shizu.debloater",
+      "name": {
+        "en": "ShizuDebloater",
+        "de": "ShizuDebloater"
+      },
+      "description": {
+        "en": "Reversible Shizuku system-app management with restore-oriented workflows.",
+        "de": "Reversible Shizuku-Systemapp-Verwaltung mit Wiederherstellungs-Workflows."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Apps",
+      "accessLevel": "shizuku",
+      "status": "requires-native-bridge",
+      "installable": false,
+      "package": "plugins/community.dioxamine.shizu.debloater/plugin.zip",
+      "sha256": "88b7b7d8b2bfebd81d8f4b1f4e52e0772fec83b556dd1b80cec1285accccbd77",
+      "icon": "plugins/community.dioxamine.shizu.debloater/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.shizu.debloater",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {},
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "shizuku",
+        "apps"
+      ]
+    },
+    {
+      "id": "community.dioxamine.shizu.components",
+      "name": {
+        "en": "ShizuComponent Manager",
+        "de": "ShizuComponent Manager"
+      },
+      "description": {
+        "en": "Inspect and manage supported app components through a future native Shizuku bridge.",
+        "de": "Unterstützte App-Komponenten über eine zukünftige native Shizuku-Bridge untersuchen und verwalten."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Apps",
+      "accessLevel": "shizuku",
+      "status": "requires-native-bridge",
+      "installable": false,
+      "package": "plugins/community.dioxamine.shizu.components/plugin.zip",
+      "sha256": "d144ff3e4cef6af9d08dd395cc76202db9ea5c5f5365947d7701805e2827c090",
+      "icon": "plugins/community.dioxamine.shizu.components/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.shizu.components",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {},
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "shizuku",
+        "apps"
+      ]
+    },
+    {
+      "id": "community.dioxamine.shizu.capabilities",
+      "name": {
+        "en": "Shizuku Capability Matrix",
+        "de": "Shizuku Capability Matrix"
+      },
+      "description": {
+        "en": "Determine which Shizuku-backed privileged operations are available on the host.",
+        "de": "Ermittelt, welche Shizuku-basierten privilegierten Operationen auf dem Host verfügbar sind."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Diagnostics",
+      "accessLevel": "shizuku",
+      "status": "requires-native-bridge",
+      "installable": false,
+      "package": "plugins/community.dioxamine.shizu.capabilities/plugin.zip",
+      "sha256": "15f748cddd8470963a7f00ed184f5943808648f7773b674956ccaa8a87d13560",
+      "icon": "plugins/community.dioxamine.shizu.capabilities/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.shizu.capabilities",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {},
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "shizuku",
+        "diagnostics"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.wakelockhunter",
+      "name": {
+        "en": "WakeLock Hunter",
+        "de": "WakeLock Hunter"
+      },
+      "description": {
+        "en": "Root-assisted wakeup-source and wakelock diagnostics.",
+        "de": "Root-gestützte Wakeup-Source- und Wakelock-Diagnose."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Battery",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.wakelockhunter/plugin.zip",
+      "sha256": "26e1a029c5d7f0c0fde0f1e6e50e10193406bdad75a887998dd85a9c9508b43f",
+      "icon": "plugins/community.dioxamine.root.wakelockhunter/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.wakelockhunter",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "battery"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.bootanalyzer",
+      "name": {
+        "en": "Boot Performance Analyzer",
+        "de": "Boot Performance Analyzer"
+      },
+      "description": {
+        "en": "Root-assisted boot diagnostics using init states, boot properties and logs.",
+        "de": "Root-gestützte Boot-Diagnose über Init-Status, Boot-Properties und Logs."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "System",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.bootanalyzer/plugin.zip",
+      "sha256": "17741c7f521dede5ae9f5505de09b5d29378b9fa70551448d4c59e8fa56ac85e",
+      "icon": "plugins/community.dioxamine.root.bootanalyzer/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.bootanalyzer",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "system"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.ebpfmonitor",
+      "name": {
+        "en": "eBPF System Monitor",
+        "de": "eBPF System Monitor"
+      },
+      "description": {
+        "en": "Capability-aware inspection of eBPF filesystem and kernel support.",
+        "de": "Capability-bewusste Untersuchung von eBPF-Dateisystem und Kernel-Unterstützung."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Kernel",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.ebpfmonitor/plugin.zip",
+      "sha256": "eafbe0ee0b5b57ebaab0060df6b379eddadafd3826fc7af59abdcb6a26ad2fb4",
+      "icon": "plugins/community.dioxamine.root.ebpfmonitor/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.ebpfmonitor",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "kernel"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.irqinspector",
+      "name": {
+        "en": "IRQ & Interrupt Inspector",
+        "de": "IRQ- & Interrupt-Inspector"
+      },
+      "description": {
+        "en": "Visualize interrupt and softirq counters on rooted Android devices.",
+        "de": "Visualisiert Interrupt- und SoftIRQ-Zähler auf gerooteten Android-Geräten."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Kernel",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.irqinspector/plugin.zip",
+      "sha256": "e5a427b498b7f93e384b9d53782ca8d10d7f19215280a4bcc86333f8ea66a920",
+      "icon": "plugins/community.dioxamine.root.irqinspector/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.irqinspector",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "kernel"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.cgroups",
+      "name": {
+        "en": "Cgroup Explorer",
+        "de": "Cgroup Explorer"
+      },
+      "description": {
+        "en": "Browse Android/Linux cgroup hierarchy, controllers and process assignments.",
+        "de": "Durchsucht Android/Linux-Cgroup-Hierarchie, Controller und Prozesszuordnungen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Kernel",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.cgroups/plugin.zip",
+      "sha256": "0eeb011ccfd40bc96af2dd2de721bf3c6cd2c073f80f16531e1bdbf05fe08910",
+      "icon": "plugins/community.dioxamine.root.cgroups/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.cgroups",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "kernel"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.blockio",
+      "name": {
+        "en": "Block I/O Analyzer",
+        "de": "Block-I/O-Analyzer"
+      },
+      "description": {
+        "en": "Inspect Linux block-device and disk I/O counters.",
+        "de": "Untersucht Linux-Blockgeräte und Disk-I/O-Zähler."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Performance",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.blockio/plugin.zip",
+      "sha256": "445998d939d0df176721a7f4dc623687d251afe344f8aec7b74483fe485ba83f",
+      "icon": "plugins/community.dioxamine.root.blockio/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.blockio",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "performance"
+      ]
+    },
+    {
+      "id": "community.dioxamine.root.taskengine",
+      "name": {
+        "en": "Root Task Engine",
+        "de": "Root Task Engine"
+      },
+      "description": {
+        "en": "Create and run explicitly approved reusable root command workflows.",
+        "de": "Explizit bestätigte wiederverwendbare Root-Befehlsabläufe erstellen und ausführen."
+      },
+      "author": "DIOXAMINE Plugin Store community",
+      "version": "0.1.0",
+      "versionCode": 1,
+      "category": "Automation",
+      "accessLevel": "root",
+      "status": "mvp",
+      "installable": true,
+      "package": "plugins/community.dioxamine.root.taskengine/plugin.zip",
+      "sha256": "c342dfab650277194ea4a876aba8b3240f29f910b2e2c163852640f514bdc6d0",
+      "icon": "plugins/community.dioxamine.root.taskengine/icon.svg",
+      "source": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store/tree/main/plugins/community.dioxamine.root.taskengine",
+      "license": "MIT",
+      "minDioxamineVersionCode": 1,
+      "compatibility": {
+        "minVersion": "current plugin API",
+        "minVersionCode": 1,
+        "testedVersions": []
+      },
+      "permissions": {
+        "adb": [
+          "shell"
+        ]
+      },
+      "updatedAt": "2026-09-25T00:00:00Z",
+      "changelog": {
+        "en": "Initial community MVP.",
+        "de": "Erstes Community-MVP."
+      },
+      "tags": [
+        "root",
+        "automation"
+      ]
+    }
+  ]
 }

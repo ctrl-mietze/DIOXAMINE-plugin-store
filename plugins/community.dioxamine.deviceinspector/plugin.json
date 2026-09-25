@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.deviceinspector",
+  "name": "Device Inspector Pro",
+  "description": "Comprehensive ADB device information dashboard with build, kernel, memory, storage, battery and thermal diagnostics.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "adb": [
+      "shell"
+    ]
+  },
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

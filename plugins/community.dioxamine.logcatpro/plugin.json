@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.logcatpro",
+  "name": "Logcat Pro",
+  "description": "Real-time Logcat viewer with search, pause, filtering and crash-focused views.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "adb": [
+      "shell"
+    ]
+  },
+  "fullscreen": true,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

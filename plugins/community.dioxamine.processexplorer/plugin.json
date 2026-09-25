@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.processexplorer",
+  "name": "Process Explorer",
+  "description": "Refreshable process viewer with PID, UID/user, memory and process details exposed by Android.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "adb": [
+      "shell"
+    ]
+  },
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

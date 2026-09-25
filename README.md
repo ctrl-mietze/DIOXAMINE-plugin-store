@@ -10,7 +10,7 @@ This repository is the public catalogue and package source for the DIOXAMINE com
 
 ## Browse plugins
 
-Open [`catalogue/plugins.json`](catalogue/plugins.json) to see the machine-readable catalogue, or browse the [`plugins/`](plugins/) directory for package contents. **There are currently no community plugins listed.** The catalogue is intentionally empty until a real plugin has been reviewed and accepted.
+Open [`catalogue/plugins.json`](catalogue/plugins.json) to see the machine-readable catalogue, or browse the [`plugins/`](plugins/) directory for package contents. **The catalogue currently contains 27 community plugin projects: 15 standard, 5 Shizuku-oriented, and 7 root-oriented.** 22 are installable MVPs; the five Shizuku projects remain marked as requiring a native DIOXAMINE Shizuku bridge.
 
 Plugin packages are stored in this repository and downloaded directly from GitHub. They are not distributed through GitHub Releases.
 

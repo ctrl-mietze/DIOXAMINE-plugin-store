@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.httpapitester",
+  "name": "HTTP API Tester",
+  "description": "Postman-style HTTP client powered by the permission-gated dioxamine.http.fetch bridge.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "common": [
+      "network"
+    ]
+  },
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.largefilefinder",
+  "name": "Large File Finder",
+  "description": "Analyze accessible target storage and list the largest files and directories without deleting anything.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "adb": [
+      "shell"
+    ]
+  },
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

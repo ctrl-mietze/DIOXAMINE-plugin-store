@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'><title>Shizuku Capability Matrix</title><style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--dioxamine-bg,#121212);color:var(--dioxamine-fg,#fff);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+body{padding:16px}main{max-width:900px;margin:auto}h1{font-size:22px;margin:0}.muted{color:var(--dioxamine-on-surface-variant,#aaa)}
+.card{background:var(--dioxamine-card-bg,#1e1e1e);border:1px solid var(--dioxamine-outline-variant,#333);border-radius:14px;padding:14px;margin:12px 0}
+.row,.actions{display:flex;gap:8px;flex-wrap:wrap}.actions button{flex:1 1 140px}
+button,input,select,textarea{font:inherit;border-radius:10px;border:1px solid var(--dioxamine-outline-variant,#444);padding:10px;background:var(--dioxamine-surface-variant,#252525);color:var(--dioxamine-fg,#fff)}
+button{font-weight:650;cursor:pointer}button.primary{background:var(--dioxamine-accent,#448aff);color:var(--dioxamine-on-primary,#fff);border-color:transparent}button:disabled{opacity:.5}
+input,select,textarea{width:100%}textarea{min-height:130px;font-family:monospace}pre{white-space:pre-wrap;word-break:break-word;background:var(--dioxamine-bg,#111);border:1px solid var(--dioxamine-outline-variant,#333);padding:12px;border-radius:10px;max-height:60vh;overflow:auto}
+.badge{display:inline-flex;padding:5px 9px;border-radius:999px;border:1px solid var(--dioxamine-outline-variant,#444);font-size:12px}.status{font:12px monospace}
+label{display:block;font-weight:650;font-size:13px;margin:8px 0 4px}
+</style></head><body><main><h1>Shizuku Capability Matrix</h1><p class='muted'>Determine which Shizuku-backed privileged operations are available on the host.</p><div class='row'><span class='badge'>SHIZUKU</span><span class='status' id='status'>waiting…</span></div><section class="card"><h2>Native Shizuku bridge required</h2><p>The checked DIOXAMINE Git source does not currently expose Shizuku/rish to WebView plugins. This package is intentionally not pretending that normal ADB is Shizuku.</p><p class="muted">Status: requires-native-bridge</p></section><section class="card"><pre id="out">Not installable from the Community Store until a documented, permission-gated Shizuku bridge exists.</pre></section></main><script>
+const D=()=>window.dioxamine||window.Dioxamine,$=s=>document.querySelector(s);
+function ready(fn){if(D()&&window.__dioxamine_bridge_ready)fn();else window.addEventListener('dioxamine-bridge-ready',fn,{once:true})}
+async function shell(c){if(!D()?.adb?.shellExec)throw Error('ADB shell bridge unavailable');return await D().adb.shellExec(c)}
+function q(s){return "'"+String(s).replace(/'/g,"'\"'\"'")+"'"}
+async function root(c){return await shell('su -c '+q(c))}
+function out(x){$('#out').textContent=String(x??'')}function st(x){$('#status').textContent=String(x??'')}
+async function execAction(type,cmd){st('running…');try{const r=await (type==='root'?root(cmd):shell(cmd));out((r.stdout||'')+(r.stderr?'\n[stderr]\n'+r.stderr:''));st('exit '+r.exitCode)}catch(e){out(e.message||e);st('error')}}
+function init(){st('requires-native-bridge')};ready(init);</script></body></html>

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.backuptransfer",
+  "name": "Backup & Transfer Manager",
+  "description": "Transfer individual files between the DIOXAMINE host and the connected target using SAF and ADB push/pull.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {
+    "adb": [
+      "push",
+      "pull",
+      "shell"
+    ]
+  },
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

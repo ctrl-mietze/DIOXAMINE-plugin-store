@@ -10,7 +10,7 @@ Dieses Repository ist der öffentliche Katalog und Paket-Speicher der DIOXAMINE-
 
 ## Plugins entdecken
 
-Die maschinenlesbare Übersicht steht in [`catalogue/plugins.json`](catalogue/plugins.json). Die [`plugins/`](plugins/) enthält die Paketdateien. **Aktuell sind noch keine Community-Plugins gelistet.** Der Katalog bleibt leer, bis echte Plugins geprüft und aufgenommen wurden.
+Die maschinenlesbare Übersicht steht in [`catalogue/plugins.json`](catalogue/plugins.json). Die [`plugins/`](plugins/) enthält die Paketdateien. **Der Katalog enthält aktuell 27 Community-Plugin-Projekte: 15 Standard-, 5 Shizuku- und 7 Root-Plugins.** 22 davon sind als MVP installierbar; die fünf Shizuku-Projekte bleiben bis zu einer nativen DIOXAMINE-Shizuku-Bridge entsprechend markiert.
 
 Plugin-Pakete liegen in diesem Repository und werden direkt von GitHub geladen. GitHub Releases werden dafür nicht verwendet.
 

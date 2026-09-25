@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.shizu.debloater",
+  "name": "ShizuDebloater",
+  "description": "Reversible Shizuku system-app management with restore-oriented workflows.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {},
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}

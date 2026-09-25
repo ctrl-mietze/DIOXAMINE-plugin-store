@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "community.dioxamine.shizu.components",
+  "name": "ShizuComponent Manager",
+  "description": "Inspect and manage supported app components through a future native Shizuku bridge.",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "author": "DIOXAMINE Plugin Store community",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "minAppVersionCode": 1,
+  "permissions": {},
+  "fullscreen": false,
+  "homepage": "https://github.com/ctrl-mietze/DIOXAMINE-plugin-store"
+}
